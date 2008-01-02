@@ -14,6 +14,7 @@ URL:		http://www.powarman.de/vdr_plugins.htm
 Source:		http://home.arcor.de/andreas.regel/files/joystick/vdr-%plugin-%version.tar.bz2
 # workaround for glibc #22923
 Patch1:		vdr-joystick-glibc-int32.patch
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.4.1-6
 Requires:	vdr-abi = %vdr_abi
 
