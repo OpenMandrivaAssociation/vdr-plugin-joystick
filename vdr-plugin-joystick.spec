@@ -2,7 +2,7 @@
 %define plugin	joystick
 %define name	vdr-plugin-%plugin
 %define version	0.0.3
-%define rel	13
+%define rel	14
 
 Summary:	VDR plugin: use a joystick as a remote
 Name:		%name
@@ -15,7 +15,7 @@ Source:		http://home.arcor.de/andreas.regel/files/joystick/vdr-%plugin-%version.
 # workaround for glibc #22923
 Patch1:		vdr-joystick-glibc-int32.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	vdr-devel >= 1.4.1-6
+BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 
 %description
@@ -25,6 +25,7 @@ a joystick with a minimum of 2 axes and 4 buttons.
 %prep
 %setup -q -n %plugin-%version
 %patch1 -p0
+%vdr_plugin_prep
 
 %vdr_plugin_params_begin %plugin
 # joystick device
