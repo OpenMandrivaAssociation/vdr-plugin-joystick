@@ -2,7 +2,7 @@
 %define plugin	joystick
 %define name	vdr-plugin-%plugin
 %define version	0.0.3
-%define rel	17
+%define rel	18
 
 Summary:	VDR plugin: use a joystick as a remote
 Name:		%name
