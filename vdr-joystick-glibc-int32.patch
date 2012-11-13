@@ -1,0 +1,12 @@
+Index: joystick.c
+===================================================================
+--- joystick.c
++++ joystick.c	2006-06-04 22:51:28.000000000 +0200
+@@ -9,6 +9,7 @@
+  * GNU GENERAL PUBLIC LICENSE. See the file COPYING for details.
+  */
+ 
++#include <inttypes.h>
+ #include <linux/joystick.h>
+ 
+ #include "joystick.h"
