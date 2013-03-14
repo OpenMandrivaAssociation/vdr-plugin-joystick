@@ -2,7 +2,7 @@
 %define plugin	joystick
 %define name	vdr-plugin-%plugin
 %define version	0.0.3
-%define rel	19
+%define rel	20
 
 Summary:	VDR plugin: use a joystick as a remote
 Name:		%name
@@ -42,12 +42,6 @@ perl -pi -e 's/^2/# 2/' examples/mappings.conf
 %vdr_plugin_install
 
 install -D -m644 examples/mappings.conf %{buildroot}%{vdr_plugin_cfgdir}/%plugin/mappings.conf
-
-%post
-%vdr_plugin_post %plugin
-
-%postun
-%vdr_plugin_postun %plugin
 
 %files -f %plugin.vdr
 %defattr(-,root,root)
