@@ -3,7 +3,7 @@
 Summary:	VDR plugin: use a joystick as a remote
 Name:		vdr-plugin-%plugin
 Version:	0.0.3
-Release:	21
+Release:	22
 Group:		Video
 License:	GPL
 URL:		http://www.powarman.de/vdr_plugins.htm
