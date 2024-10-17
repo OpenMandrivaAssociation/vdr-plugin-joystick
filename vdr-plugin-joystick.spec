@@ -6,7 +6,7 @@ Version:	0.0.3
 Release:	22
 Group:		Video
 License:	GPL
-URL:		http://www.powarman.de/vdr_plugins.htm
+URL:		https://www.powarman.de/vdr_plugins.htm
 Source:		http://home.arcor.de/andreas.regel/files/joystick/vdr-%plugin-%{version}.tar.bz2
 # workaround for glibc #22923
 Patch1:		vdr-joystick-glibc-int32.patch
